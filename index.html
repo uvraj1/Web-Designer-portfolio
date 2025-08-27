@@ -1,0 +1,744 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Professional Web Designer Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Scrollbar for project gallery */
+    ::-webkit-scrollbar {
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1f2937;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4b5563;
+      border-radius: 4px;
+    }
+  </style>
+ </head>
+ <body class="bg-black text-gray-300 min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="w-full fixed top-0 left-0 bg-black bg-opacity-90 backdrop-blur-md z-50 border-b border-gray-800">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-2xl font-bold text-indigo-500 tracking-wide" href="#home">
+     Youbaraj Nama
+    </a>
+    <ul class="hidden md:flex space-x-8 text-gray-400 font-medium">
+     <li>
+      <a class="hover:text-indigo-500 transition" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-500 transition" href="#skills">
+       Skills
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-500 transition" href="#projects">
+       Projects
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-500 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <button class="md:hidden text-gray-400 hover:text-indigo-500 focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <div class="hidden md:hidden bg-black border-t border-gray-800" id="mobile-menu">
+    <ul class="flex flex-col space-y-4 px-6 py-4 text-gray-400 font-medium">
+     <li>
+      <a class="hover:text-indigo-500 transition block" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-500 transition block" href="#skills">
+       Skills
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-500 transition block" href="#projects">
+       Projects
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-500 transition block" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="pt-24 pb-16 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12" id="home">
+   <div class="flex-1 text-center md:text-left">
+    <h1 class="text-5xl font-extrabold text-indigo-500 leading-tight mb-4">
+     Youbaraj Nama
+    </h1>
+    <p class="text-xl text-gray-400 mb-6 max-w-xl mx-auto md:mx-0">
+     Professional Web Designer &amp; Frontend Developer crafting beautiful, user-friendly websites and digital experiences.
+    </p>
+    <div class="flex justify-center md:justify-start space-x-6">
+     <a class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md font-semibold transition shadow-lg shadow-indigo-700/50" href="#projects">
+      View Projects
+     </a>
+     <a class="px-6 py-3 border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md font-semibold transition" href="#contact">
+      Contact Me
+     </a>
+    </div>
+   </div>
+   <div class="flex-1 max-w-sm mx-auto md:mx-0">
+    <img alt="Portrait of Youbaraj Nama, a professional web designer wearing modern glasses and headphones, smiling confidently" class="rounded-full border-4 border-indigo-600 shadow-lg" height="400" loading="lazy" src="myimage.jpg" width="400"/>
+   </div>
+  </header>
+  <!-- About Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16 border-t border-gray-800" id="about">
+   <h2 class="text-4xl font-bold text-indigo-500 mb-8 text-center">
+    About Me
+   </h2>
+   <div class="max-w-4xl mx-auto text-center text-gray-400 text-lg leading-relaxed">
+    <p>
+     Hello! I'm Youbaraj Nama, a passionate web designer creating stunning, responsive, and user-friendly websites. I specialize in combining creativity with technical skills to deliver digital solutions that help businesses grow and engage their audience.
+    </p>
+    <p class="mt-4">
+     My expertise ranges from UI/UX design, frontend development, to branding and digital marketing. I love turning ideas into reality and continuously learning new technologies to stay ahead in the fast-evolving web industry.
+    </p>
+   </div>
+  </section>
+  <!-- Skills Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16 border-t border-gray-800" id="skills">
+   <h2 class="text-4xl font-bold text-indigo-500 mb-12 text-center">
+    My Skills
+   </h2>
+   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 max-w-5xl mx-auto">
+    <div class="flex flex-col items-center space-y-3">
+     <img alt="HTML5 logo, orange colored stylized number 5" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/99a95303-9d67-4913-4168-3e860e727d14.jpg" width="64"/>
+     <span class="text-gray-300 font-semibold">
+      HTML5
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-3">
+     <img alt="CSS3 logo, blue colored shield with number 3" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ec4aac63-0979-4dad-e151-8e84fb6df129.jpg" width="64"/>
+     <span class="text-gray-300 font-semibold">
+      CSS3
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-3">
+     <img alt="JavaScript logo, yellow square with black JS letters" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b49deac4-3eb9-470c-7b1e-f5b9f682e39d.jpg" width="64"/>
+     <span class="text-gray-300 font-semibold">
+      JavaScript
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-3">
+     <img alt="Tailwind CSS logo, stylized blue and green wind icon" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/96dd9482-2a42-4757-23af-b9aa5ddf81ae.jpg" width="64"/>
+     <span class="text-gray-300 font-semibold">
+      Tailwind CSS
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-3">
+     <img alt="React logo, blue atom with three elliptical orbits" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c83be768-720e-4d45-12d4-917f2ca8929e.jpg" width="64"/>
+     <span class="text-gray-300 font-semibold">
+      React
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-3">
+     <img alt="Figma logo, multi-colored stylized F letter" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/db0fbd25-bf2a-44fb-cdf2-39d7445bf3e7.jpg" width="64"/>
+     <span class="text-gray-300 font-semibold">
+      Figma
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-3">
+     <img alt="Git logo, orange diamond with white branching lines" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/36cdceee-62ac-446f-d6b9-7cc84351a8ad.jpg" width="64"/>
+     <span class="text-gray-300 font-semibold">
+      Git
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-3">
+     <img alt="Adobe Photoshop logo, blue square with Ps letters" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/7b070f2f-1f09-4096-b26c-df019d034b23.jpg" width="64"/>
+     <span class="text-gray-300 font-semibold">
+      Photoshop
+     </span>
+    </div>
+   </div>
+  </section>
+  <!-- Projects Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16 border-t border-gray-800" id="projects">
+   <h2 class="text-4xl font-bold text-indigo-500 mb-12 text-center">
+    My Projects
+   </h2>
+   <div class="grid gap-12 max-w-6xl mx-auto md:grid-cols-2 lg:grid-cols-3">
+    <!-- Project 1 -->
+    <article class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+     <img alt="Screenshot of an e-commerce website design with modern UI and responsive layout, showing product grid and navigation" class="w-full object-cover h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9c6cc093-c1cf-4b86-7ae4-1a6c19895cfa.jpg" width="600"/>
+     <div class="p-6 flex flex-col flex-1">
+      <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+       E-commerce Website
+      </h3>
+      <p class="text-gray-400 flex-1 mb-4">
+       Designed and developed a fully responsive e-commerce website with smooth animations, product filtering, and secure checkout.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        HTML
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        CSS
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        JavaScript
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        React
+       </span>
+      </div>
+      <div class="mt-auto flex space-x-4">
+       <button class="project-btn px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-md text-sm font-semibold transition" data-project="project1">
+        View Demo
+       </button>
+       <a class="px-4 py-2 border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md text-sm font-semibold transition" href="https://github.com/uvraj1" rel="noopener noreferrer" target="_blank">
+        GitHub
+       </a>
+      </div>
+     </div>
+    </article>
+    <!-- Project 2 -->
+    <article class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+     <img alt="Screenshot of a portfolio website with dark theme and smooth scrolling, featuring a hero section and project gallery" class="w-full object-cover h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ac9183f6-06f7-4a96-e80b-d5e0410d5c56.jpg" width="600"/>
+     <div class="p-6 flex flex-col flex-1">
+      <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+       Portfolio Website
+      </h3>
+      <p class="text-gray-400 flex-1 mb-4">
+       Created a sleek portfolio website with dark theme, smooth scrolling, and interactive project showcase to highlight my work.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        HTML
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        Tailwind CSS
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        JavaScript
+       </span>
+      </div>
+      <div class="mt-auto flex space-x-4">
+       <button class="project-btn px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-md text-sm font-semibold transition" data-project="project2">
+        View Demo
+       </button>
+       <a class="px-4 py-2 border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md text-sm font-semibold transition" href="https://github.com/uvraj1" rel="noopener noreferrer" target="_blank">
+        GitHub
+       </a>
+      </div>
+     </div>
+    </article>
+    <!-- Project 3 -->
+    <article class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+     <img alt="Screenshot of a blog platform with custom CMS and responsive design, showing article list and navigation" class="w-full object-cover h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4ab5fe01-d9dc-4a18-72e4-f976dedc4dbb.jpg" width="600"/>
+     <div class="p-6 flex flex-col flex-1">
+      <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+       Blog Platform
+      </h3>
+      <p class="text-gray-400 flex-1 mb-4">
+       Developed a custom blog platform with CMS integration, responsive design, and SEO optimization for content creators.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        HTML
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        CSS
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        JavaScript
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        Vue.js
+       </span>
+      </div>
+      <div class="mt-auto flex space-x-4">
+       <button class="project-btn px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-md text-sm font-semibold transition" data-project="project3">
+        View Demo
+       </button>
+       <a class="px-4 py-2 border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md text-sm font-semibold transition" href="https://github.com/uvraj1" rel="noopener noreferrer" target="_blank">
+        GitHub
+       </a>
+      </div>
+     </div>
+    </article>
+    <!-- Project 4 -->
+    <article class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+     <img alt="Screenshot of a mobile app landing page with animated elements and call to action buttons" class="w-full object-cover h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b5afa0f7-8591-4e2f-1383-785de6cd5c62.jpg" width="600"/>
+     <div class="p-6 flex flex-col flex-1">
+      <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+       Mobile App Landing
+      </h3>
+      <p class="text-gray-400 flex-1 mb-4">
+       Designed a captivating landing page for a mobile app featuring animations, testimonials, and download links.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        HTML
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        CSS
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        GSAP
+       </span>
+      </div>
+      <div class="mt-auto flex space-x-4">
+       <button class="project-btn px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-md text-sm font-semibold transition" data-project="project4">
+        View Demo
+       </button>
+       <a class="px-4 py-2 border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md text-sm font-semibold transition" href="https://github.com/uvraj1" rel="noopener noreferrer" target="_blank">
+        GitHub
+       </a>
+      </div>
+     </div>
+    </article>
+    <!-- Project 5 -->
+    <article class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+     <img alt="Screenshot of a corporate website with clean design and CMS integration, showing homepage with hero and services" class="w-full object-cover h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/140e4012-1d44-4ec7-bc14-a6a1f36fe082.jpg" width="600"/>
+     <div class="p-6 flex flex-col flex-1">
+      <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+       Corporate Website
+      </h3>
+      <p class="text-gray-400 flex-1 mb-4">
+       Built a corporate website with a clean, professional design, CMS integration, and multi-language support.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        HTML
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        CSS
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        WordPress
+       </span>
+      </div>
+      <div class="mt-auto flex space-x-4">
+       <button class="project-btn px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-md text-sm font-semibold transition" data-project="project5">
+        View Demo
+       </button>
+       <a class="px-4 py-2 border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md text-sm font-semibold transition" href="https://github.com/uvraj1" rel="noopener noreferrer" target="_blank">
+        GitHub
+       </a>
+      </div>
+     </div>
+    </article>
+    <!-- Project 6 -->
+    <article class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+     <img alt="Screenshot of an interactive dashboard with charts and real-time data visualization in dark theme" class="w-full object-cover h-48" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e4a001a1-27e2-465b-c5c9-3f83fe2fc45f.jpg" width="600"/>
+     <div class="p-6 flex flex-col flex-1">
+      <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+       Interactive Dashboard
+      </h3>
+      <p class="text-gray-400 flex-1 mb-4">
+       Developed an interactive dashboard with real-time data visualization, charts, and user-friendly controls.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        React
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        D3.js
+       </span>
+       <span class="bg-indigo-700 text-indigo-300 px-3 py-1 rounded-full text-xs font-semibold">
+        Tailwind CSS
+       </span>
+      </div>
+      <div class="mt-auto flex space-x-4">
+       <button class="project-btn px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-md text-sm font-semibold transition" data-project="project6">
+        View Demo
+       </button>
+       <a class="px-4 py-2 border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md text-sm font-semibold transition" href="https://github.com/uvraj1" rel="noopener noreferrer" target="_blank">
+        GitHub
+       </a>
+      </div>
+     </div>
+    </article>
+   </div>
+  </section>
+  <!-- Project Demo Modal -->
+  <div aria-describedby="modal-description" aria-labelledby="modal-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm flex items-center justify-center p-6 z-50 hidden" id="project-modal" role="dialog">
+   <div class="bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+    <button aria-label="Close modal" class="absolute top-4 right-4 text-gray-400 hover:text-indigo-500 text-2xl focus:outline-none" id="modal-close">
+     <i class="fas fa-times">
+     </i>
+    </button>
+    <div class="p-6 text-gray-300" id="modal-content">
+     <!-- Dynamic content inserted here -->
+    </div>
+   </div>
+  </div>
+  <!-- Contact Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16 border-t border-gray-800" id="contact">
+   <h2 class="text-4xl font-bold text-indigo-500 mb-12 text-center">
+    Get In Touch
+   </h2>
+   <div class="max-w-3xl mx-auto bg-gray-900 rounded-lg p-8 shadow-lg">
+    <form class="space-y-6" id="contact-form" novalidate="youbarajnama@yahoo.com">
+     <div>
+      <label class="block mb-2 font-semibold text-gray-300" for="name">
+       Name
+      </label>
+      <input class="w-full rounded-md bg-gray-800 border border-gray-700 px-4 py-3 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+      <p class="mt-1 text-red-500 text-sm hidden" id="name-error">
+       Please enter your name.
+      </p>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold text-gray-300" for="email">
+       Email
+      </label>
+      <input class="w-full rounded-md bg-gray-800 border border-gray-700 px-4 py-3 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500" id="email" name="email" placeholder="your.Email@gmail.com" required="" type="email"/>
+      <p class="mt-1 text-red-500 text-sm hidden" id="email-error">
+       Please enter a valid email address.
+      </p>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold text-gray-300" for="message">
+       Message
+      </label>
+      <textarea class="w-full rounded-md bg-gray-800 border border-gray-700 px-4 py-3 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+      <p class="mt-1 text-red-500 text-sm hidden" id="message-error">
+       Please enter a message.
+      </p>
+     </div>
+     <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-md transition shadow-lg shadow-indigo-700/50" type="submit">
+      Send Message
+     </button>
+     <p class="text-green-500 text-center mt-4 hidden" id="form-success">
+      Thank you! Your message has been sent.
+     </p>
+    </form>
+    <div class="mt-10 text-center text-gray-400 space-y-3">
+     <p>
+      <i class="fas fa-phone-alt mr-2 text-indigo-500">
+      </i>
+      +91 9366176746
+     </p>
+     <p>
+      <i class="fas fa-envelope mr-2 text-indigo-500">
+      </i>
+      youbarajnama@yahoo.com
+     </p>
+     <p>
+      <i class="fas fa-map-marker-alt mr-2 text-indigo-500">
+      </i>
+      San Francisco, CA, USA
+     </p>
+     <div class="flex justify-center space-x-6 mt-4">
+      <a class="text-gray-400 hover:text-indigo-500 text-xl" href="https://linkedin.com/in/alexjohnson" rel="noopener noreferrer" target="_blank">
+       <i class="fab fa-linkedin">
+       </i>
+      </a>
+      <a class="text-gray-400 hover:text-indigo-500 text-xl" href="https://github.com/alexjohnson" rel="noopener noreferrer" target="_blank">
+       <i class="fab fa-github">
+       </i>
+      </a>
+      <a class="text-gray-400 hover:text-indigo-500 text-xl" href="https://twitter.com/alexjohnson" rel="noopener noreferrer" target="_blank">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a class="text-gray-400 hover:text-indigo-500 text-xl" href="https://dribbble.com/alexjohnson" rel="noopener noreferrer" target="_blank">
+       <i class="fab fa-dribbble">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-black border-t border-gray-800 py-6 mt-auto">
+   <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm select-none">
+    © 2025 Youbaraj Nama. All rights reserved.
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Project demo modal content
+    const projectsData = {
+      project1: {
+        title: "E-commerce Website",
+        description:
+          "This project is a fully responsive e-commerce website designed with modern UI principles. It features product filtering, smooth animations, and a secure checkout process. The site is built using React and styled with CSS and Tailwind CSS for a seamless user experience.",
+        images: [
+          {
+            src: "https://placehold.co/800x450/png?text=E-commerce+Homepage+with+product+grid+and+navigation",
+            alt: "E-commerce website homepage showing product grid and navigation bar with shopping cart icon",
+          },
+          {
+            src: "https://placehold.co/800x450/png?text=Product+Detail+Page+with+image+gallery+and+purchase+options",
+            alt: "Product detail page with image gallery, product description, and purchase options",
+          },
+          {
+            src: "https://placehold.co/800x450/png?text=Checkout+page+with+form+fields+and+payment+options",
+            alt: "Checkout page showing form fields for shipping and payment options",
+          },
+        ],
+        demo: `
+          <iframe
+            src="https://alexjohnson.github.io/ecommerce-website/"
+            title="E-commerce Website Demo"
+            class="w-full h-[450px] rounded-md border border-gray-700"
+            loading="lazy"
+          ></iframe>
+        `,
+      },
+      project2: {
+        title: "Portfolio Website",
+        description:
+          "A sleek portfolio website with a dark theme and smooth scrolling effects. This project highlights my work and skills with an interactive project showcase. Built with HTML, Tailwind CSS, and JavaScript for a fast and responsive experience.",
+        images: [
+          {
+            src:"images/2ndproject-1.png",
+            alt: "Portfolio website hero section with dark theme and introduction text", 
+          },
+          {
+            src: "images/2ndproject-2.png",
+            alt: "Project gallery showing multiple projects with hover effects and descriptions",
+          },
+          {
+            src: "images/2ndproject-3.png",
+            alt: "Contact section with a form and social media links",
+          },
+        ],
+        demo: `
+          <iframe
+            src="https://zhpazu4fuxcczpadneuamg.on.drv.tw/portfolio/youbaraj-portfolio/index.html.html"
+            title="Portfolio Website Demo"
+            class="w-full h-[450px] rounded-md border border-gray-700"
+            loading="lazy"
+          ></iframe>
+        `,
+      },
+      project3: {
+        title: "Blog Platform",
+        description:
+          "A custom blog platform with CMS integration, responsive design, and SEO optimization. This project allows content creators to easily publish and manage articles. Built with Vue.js, CSS, and HTML.",
+        images: [
+          {
+            src: "https://placehold.co/800x450/png?text=Blog+Homepage+with+article+list+and+navigation",
+            alt: "Blog homepage showing a list of articles and navigation menu",
+          },
+          {
+            src: "https://placehold.co/800x450/png?text=Article+Page+with+comments+section+and+related+posts",
+            alt: "Article page with comments section and related posts displayed",
+          },
+          {
+            src: "https://placehold.co/800x450/png?text=Admin+CMS+Dashboard+for+managing+posts+and+users",
+            alt: "Admin CMS dashboard interface for managing posts and users",
+          },
+        ],
+        demo: `
+          <iframe
+            src="https://uvraj1.github.io/Open-World-Blog/#"
+            title="Blog Platform Demo"
+            class="w-full h-[450px] rounded-md border border-gray-700"
+            loading="lazy"
+          ></iframe>
+        `,
+      },
+      project4: {
+        title: "Mobile App Landing",
+        description:
+          "A captivating landing page for a mobile app featuring animated elements, testimonials, and clear call-to-action buttons. Designed to increase app downloads and user engagement.",
+        images: [
+          {
+            src: "https://placehold.co/800x450/png?text=Landing+Page+Hero+with+animated+phone+mockup",
+            alt: "Landing page hero section with animated phone mockup and call to action",
+          },
+          {
+            src: "https://placehold.co/800x450/png?text=Testimonials+Section+with+user+photos+and+quotes",
+            alt: "Testimonials section showing user photos and quotes",
+          },
+          {
+            src: "https://placehold.co/800x450/png?text=Download+Buttons+for+App+Store+and+Google+Play",
+            alt: "Download buttons for App Store and Google Play with app screenshots",
+          },
+        ],
+        demo: `
+          <iframe
+            src="https://alexjohnson.github.io/mobile-app-landing/"
+            title="Mobile App Landing Demo"
+            class="w-full h-[450px] rounded-md border border-gray-700"
+            loading="lazy"
+          ></iframe>
+        `,
+      },
+      project5: {
+        title: "Corporate Website",
+        description:
+          "A clean and professional corporate website with CMS integration and multi-language support. Designed to showcase company services and build trust with clients.",
+        images: [
+          {
+            src: "https://placehold.co/800x450/png?text=Corporate+Homepage+with+hero+and+services+overview",
+            alt: "Corporate website homepage with hero section and services overview",
+          },
+          {
+            src: "https://placehold.co/800x450/png?text=Services+Page+with+icons+and+descriptions",
+            alt: "Services page showing icons and detailed descriptions",
+          },
+          {
+            src: "https://placehold.co/800x450/png?text=Contact+Page+with+form+and+map+integration",
+            alt: "Contact page with form and embedded map integration",
+          },
+        ],
+        demo: `
+          <iframe
+            src="https://alexjohnson.github.io/corporate-website/"
+            title="Corporate Website Demo"
+            class="w-full h-[450px] rounded-md border border-gray-700"
+            loading="lazy"
+          ></iframe>
+        `,
+      },
+      project6: {
+        title: "Interactive Dashboard",
+        description:
+          "An interactive dashboard with real-time data visualization, charts, and user-friendly controls. Built with React, D3.js, and Tailwind CSS for a modern and responsive interface.",
+        images: [
+          {
+            src: "https://placehold.co/800x450/png?text=Dashboard+Overview+with+charts+and+statistics",
+            alt: "Dashboard overview showing charts and statistics in dark theme",
+          },
+          {
+            src: "https://placehold.co/800x450/png?text=User+Settings+Panel+with+toggles+and+preferences",
+            alt: "User settings panel with toggles and preferences",
+          },
+          {
+            src: "https://placehold.co/800x450/png?text=Real-time+Data+Feed+and+notifications",
+            alt: "Real-time data feed and notifications panel",
+          },
+        ],
+        demo: `
+          <iframe
+            src="https://alexjohnson.github.io/interactive-dashboard/"
+            title="Interactive Dashboard Demo"
+            class="w-full h-[450px] rounded-md border border-gray-700"
+            loading="lazy"
+          ></iframe>
+        `,
+      },
+    };
+
+    const modal = document.getElementById('project-modal');
+    const modalContent = document.getElementById('modal-content');
+    const modalClose = document.getElementById('modal-close');
+    const projectButtons = document.querySelectorAll('.project-btn');
+
+    projectButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const projectKey = btn.getAttribute('data-project');
+        const project = projectsData[projectKey];
+        if (!project) return;
+
+        let imagesHtml = '';
+        project.images.forEach((img) => {
+          imagesHtml += `<img src="${img.src}" alt="${img.alt}" class="rounded-md mb-4 w-full object-cover" loading="lazy" />`;
+        });
+
+        modalContent.innerHTML = `
+          <h3 id="modal-title" class="text-3xl font-bold text-indigo-500 mb-4">${project.title}</h3>
+          <p id="modal-description" class="mb-6 text-gray-400">${project.description}</p>
+          <div class="mb-6">${imagesHtml}</div>
+          <div>${project.demo}</div>
+        `;
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    modalClose.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      modalContent.innerHTML = '';
+      document.body.style.overflow = '';
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        modalContent.innerHTML = '';
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Contact form validation and submission simulation
+    const contactForm = document.getElementById('contact-form');
+    const nameInput = contactForm.querySelector('#name');
+    const emailInput = contactForm.querySelector('#email');
+    const messageInput = contactForm.querySelector('#message');
+    const nameError = document.getElementById('name-error');
+    const emailError = document.getElementById('email-error');
+    const messageError = document.getElementById('message-error');
+    const formSuccess = document.getElementById('form-success');
+
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email.toLowerCase());
+    }
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      let valid = true;
+
+      if (!nameInput.value.trim()) {
+        nameError.classList.remove('hidden');
+        valid = false;
+      } else {
+        nameError.classList.add('hidden');
+      }
+
+      if (!validateEmail(emailInput.value.trim())) {
+        emailError.classList.remove('hidden');
+        valid = false;
+      } else {
+        emailError.classList.add('hidden');
+      }
+
+      if (!messageInput.value.trim()) {
+        messageError.classList.remove('hidden');
+        valid = false;
+      } else {
+        messageError.classList.add('hidden');
+      }
+
+      if (!valid) return;
+
+      // Simulate form submission
+      formSuccess.classList.remove('hidden');
+      contactForm.reset();
+
+      setTimeout(() => {
+        formSuccess.classList.add('hidden');
+      }, 5000);
+    });
+  </script>
+ </body>
+</html>
